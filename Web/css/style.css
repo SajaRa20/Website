@@ -1,0 +1,207 @@
+@font-face {
+	font-family: 'Pacifica Condensed Regular';
+	src: url('../fonts/Pacifica Condensed Regular.ttf') format('truetype');
+}
+.ft {
+	font-family: 'Pacifica Condensed Regular',fantasy;
+}
+body {
+	font-family: Arial,Helvetica,sans-serif;
+}
+
+nav {
+	background-color: #000 !important;
+	border-bottom: 1px solid #334;
+	padding: 25px 100px;
+	font-family: 'Bebas Neue', cursive;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	font-size: 20px;
+	letter-spacing: 0.1em;
+	color: #2e86de;
+	margin-left: 10px;
+}
+
+.navbar-dark .navbar-brand {
+	color: rgb(33, 87, 121);
+	font-size: 30px;
+	letter-spacing: 0.2em;
+    margin-left: 80px;
+}
+
+nav .user i {
+    margin-left: 10px;
+    color: #2e86de;
+    font-size: 25px;
+}
+
+nav .user {
+	padding-top: 5px;
+}
+nav .login-btn{display: flex;}
+nav .bag img {
+    width: 80%;
+}
+.navbar-toggler span i{color: #000;}
+.navbar-toggler span{background-color: #fff;padding: 13px 15px;border: none;}
+.offcanvas-collapse .close{position: relative;right: 15%;top: 30px;color: #000;}
+/* ***********Start Header************************* */
+header {
+	background-color: black;
+	position: relative;
+	height: 625px;
+}
+
+	header img {
+		margin-top: 50px;
+		width: 85%;
+	}
+
+	header h1 {
+		color: #fff;
+		text-transform: uppercase;
+		position: absolute;
+		top: 30%;
+		font-family: 'Bebas Neue', cursive;
+		font-size: 100px;
+	}
+
+	header button {
+		position: absolute;
+		top: 70%;
+		background-color: rgb(33, 87, 121) !important;
+		border: none !important;
+		border-radius: 0% !important;
+	}
+
+button a {
+	color: #fff !important;
+}
+/* ***************Start Section 2***************************** */
+.about {
+	padding: 100px 0;
+	color: #444;
+}
+
+	.about img {
+		width: 80% !important;
+	}
+
+	.about h5 {
+		margin: 50px 0;
+	}
+/* ***************Start Section 3***************************** */
+.prod {
+	background-color: #1e2f39;
+	padding: 70px 0;
+}
+
+	.prod h1 {
+		color: #fff;
+		font-size: 60px;
+	}
+
+.line {
+	border-bottom: 7px solid rgb(33, 87, 121);
+	width: 10%;
+	position: relative;
+	left: 45%;
+	margin-top: 30px;
+	font-family: 'Bebas Neue', cursive;
+}
+
+.prod .video {
+	margin: 50px 0;
+}
+
+.prod span, .prod p {
+	color: #fff;
+	font-size: 14px;
+}
+
+.prod .colom {
+	display: flex;
+}
+
+.prod .row {
+	margin-bottom: 20px;
+}
+
+.prod .colom img {
+	width: 15%;
+	height: 80%;
+	margin-right: 10px;
+}
+/* ******************Section 4*************************** */
+.contact {
+	padding: 70px 100px;
+}
+
+	.contact h1 {
+		color: rgb(33, 87, 121);
+		font-size: 80px;
+		
+	}
+
+	.contact .row {
+		margin-top: 50px;
+	}
+
+	.contact h5 {
+		margin-bottom: 50px;
+	}
+
+	.contact P, .contact h5 {
+		color: #444;
+	}
+
+	.contact img {
+		margin: 50px 0;
+	}
+
+.content button {
+	margin-top: 50px;
+}
+
+.contact button, .about button {
+	background-color: rgb(33, 87, 121) !important;
+	border: none !important;
+	border-radius: 0% !important;
+}
+
+.contact .form-control {
+	border: none;
+	border-radius: 0%;
+	border: 1px solid #000;
+	margin-bottom: 5px;
+}
+
+footer {
+	background-color: #000;
+	color: #fff;
+	font-size: 15px;
+	padding: 15px 0;
+}
+
+#message {
+	width: 50px;
+	height: 50px;
+	color: aliceblue;
+	text-align: center;
+	background-color: rgb(33, 87, 121);
+	position: fixed;
+	right: 15px;
+	bottom: 10px;
+	z-index: 99999;
+	
+	cursor: pointer;
+}
+
+	#message i {
+		font-size: 29px;
+		color: #fff;
+		margin-top: 8px;
+	}
+
+

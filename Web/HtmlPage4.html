@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORUM | headphones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/offcanvas.css">
+    <style>
+        .forum {
+            padding: 100px 0px;
+            visibility: visible;
+            overflow-x: hidden;
+               }
+            .forum h1 {
+                color: rgb(33, 87, 121);
+                font-size: 80px;
+                margin-top: 30px;
+            }
+            .forum .intro {
+                border: 1px solid #444;
+                padding: 20px 40px;
+                margin: 40px 0;
+                color: #444;
+            }
+            .forum span i {
+                margin-left: 30px;
+                cursor: pointer;
+            }
+            .forum button {
+                position: relative;
+                right: -43%;
+                background-color: rgb(33, 87, 121);
+                border-radius: 0%;
+                border: none;
+            }
+            .forum .post i {
+                color: rgb(83, 82, 82);
+                margin: 5px;
+            }
+        .admin {
+            font-size: 20px;
+        }
+        .forum .post {
+            border: 1px solid #444;
+            text-align: left;
+            font-size: 14px;
+            color: rgb(83, 82, 82);
+            padding: 15px 20px;
+        }
+        .post .date {
+            margin-left: 36px;
+        }
+        .post h6 {
+            margin-top: 20px;
+        }
+        .post .love {
+            margin-left: 80%;
+        }
+        .forum .dropdown .dropdown-menu {
+            font-size: 15px;
+            padding: 15px 20px;
+            width: 27%;
+        }
+        .forum .dropdown i {
+            position: relative;
+            top: 25px;
+        }
+        .forum input{border: none;}
+        .forum .line1{border: .5px solid #ccc;width: 35%; position: relative;left: 33%;}
+        
+    </style>
+</head>
+
+<body>
+    <!-- -----------------Start navbar--------------------------------->
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark">
+        <a class="navbar-brand" href="#">AmBits</a>
+        <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas" id="tog-btn">
+            <span><i class="fas fa-stream"></i></span>
+        </button>
+
+        <div class="navbar-collapse offcanvas-collapse" id="main-nav">
+            <i class="fas fa-times close" id="close"></i>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link mobile-active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="HtmlPage2.html">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="HtmlPage3.html">Products</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="HtmlPage4.html" target="_blank">Forum</a>
+                </li>
+                <div class="login-btn">
+                    <span class="user"><i class="fas fa-user-circle d-inline"></i></span>
+                    <li class="nav-item">
+                        <a class="nav-link mobile-active" href="HtmlPage5.html" target="_blank">Login</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <span class="bag" id="bag"><img src="img/12.png"></span>
+    </nav>
+    <!-- ----------------Start Forum---------------------->
+    <section class="forum text-center">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 left-col"><a href="#">Forum</a></div>
+            <div class="col-lg-6 col-md-6 right-col">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search">
+                <div class="line1"></div>
+            </div>
+        </div>
+        <div class="container">
+
+            <h1 class="ft">FORUM</h1>
+            <p>Join the forum and find the answers you have been searching for.</p>
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Creat New Post
+                </button>
+                <div class="dropdown-menu text-left" aria-labelledby="dropdownMenuButton">
+                    <i class="far fa-comment-alt"></i>
+                    <a class="dropdown-item" href="#">Start Discssion</a>
+                    <p>Share what’s on your mind with the community.</p>
+                    <hr>
+                    <i class="far fa-question-circle"></i>
+                    <a class="dropdown-item" href="#">Ask A Question</a>
+                    <p>Members vote for answers and you can mark one as best.</p>
+                </div>
+            </div>
+            <div class="intro">
+                <div class="row text-left">
+                    <div class="col-lg-8 col-md-4">
+                        <a href="#">Help and Getting Started</a>
+                        <p>Describe your forum category. Engage your audience and entice them to continue reading.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <span><i class="far fa-eye"></i></span>
+                        <span><i class="far fa-comment-alt"></i></span>
+                    </div>
+                    <div class="col-lg-1 col-md-4"><span>Follow</span></div>
+
+                </div>
+            </div>
+
+            <div class="intro">
+                <div class="row text-left">
+                    <div class="col-lg-8 col-md-4">
+                        <a href="#">Announcements and Deals</a>
+                        <p>Add your category description here. Be sure to write in an informative way that entices further</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <span><i class="far fa-eye"></i></span>
+                        <span><i class="far fa-comment-alt"></i></span>
+                    </div>
+                    <div class="col-lg-1 col-md-4"><span>Follow</span></div>
+
+                </div>
+            </div>
+
+            <p class="new-post text-left"><a href="#">New Post</a></p>
+
+            <div class="posts">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="post">
+                            <i class="fas fa-user-shield admin"></i>
+                            <span>Admin</span>
+                            <i class="fas fa-crown"></i> <br>
+                            <span class="date">Jun 09</span>
+                            <h6><a href="#">Weekend sale</a></h6>
+                            <p><a href="#">Announcements and Deals</a></p>
+                            <p>Post about your forum topic here. Engage your audience with relevant and interesting posts that will.</p>
+                            <hr>
+                            <span><i class="far fa-comment-alt"></i></span>
+                            <span class="love"><i class="far fa-heart"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="post">
+                            <i class="fas fa-user-shield admin"></i>
+                            <span>Admin</span>
+                            <i class="fas fa-crown"></i> <br>
+                            <span class="date">Jun 09</span>
+                            <h6><a href="#">Weekend sale</a></h6>
+                            <p><a href="#">Announcements and Deals</a></p>
+                            <p>Post about your forum topic here. Engage your audience with relevant and interesting posts that will.</p>
+                            <hr>
+                            <span><i class="far fa-comment-alt"></i></span>
+                            <span class="love"><i class="far fa-heart"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="post">
+                            <i class="fas fa-user-shield admin"></i>
+                            <span>Admin</span>
+                            <i class="fas fa-crown"></i> <br>
+                            <span class="date">Jun 09</span>
+                            <h6><a href="#">Weekend sale</a></h6>
+                            <p><a href="#">Announcements and Deals</a></p>
+                            <p>Post about your forum topic here. Engage your audience with relevant and interesting posts that will.</p>
+                            <hr>
+                            <span><i class="far fa-comment-alt"></i></span>
+                            <span class="love"><i class="far fa-heart"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--        --------------- Footer------------------------- -->
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>© 2023 by AmBits. Proudly created with <ins>Wix.com</ins></p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://static.wixstatic.com/media/01ab6619093f45388d66736ec22e5885.png/v1/fill/w_32,h_32,al_c,q_85,usm_0.66_1.00_0.01/01ab6619093f45388d66736ec22e5885.webp">
+                    <img src="https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_32,h_32,al_c,q_85,usm_0.66_1.00_0.01/23fd2a2be53141ed810f4d3dcdcd01fa.webp">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="scroll-top">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/offcanvas.js"></script>
+</body>
+
+</html>
